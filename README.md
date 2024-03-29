@@ -4,6 +4,7 @@ This project is a Graphic Designer website showcasing portfolios and services. I
 
 ![image](./frontend/public/studio14.gif)
 
+
 ## Available Scripts
 
 ### Frontend
