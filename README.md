@@ -2,8 +2,8 @@
 
 This project is a Graphic Designer website showcasing portfolios and services. It utilizes Python in the backend, JavaScript (React) in the frontend, along with Flask, HTML, and CSS.
 
-![image](/frontend/studio14.gif)
-![image](./public/padel.gif)
+
+![image](frontend/studio14.gif)
 
 
 ## Available Scripts
