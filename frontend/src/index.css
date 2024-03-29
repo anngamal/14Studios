@@ -1,0 +1,774 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #080808; */
+  background-color: #1a1919;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* "NAV SECTION" */
+
+
+/* incase if i want to make the navbar black again not transparent, i should use line 17 nav not the other one  */
+/* nav {
+  background-color: #333;
+  padding: 0.75rem 0; 
+  box-shadow: 0 2px 10px rgba(136, 77, 77, 0.1);
+  font-size: 1.5rem; 
+  line-height: 1.5; 
+} */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 0.75rem 0; 
+  font-size: 1.5rem; 
+  line-height: 1.5; 
+  z-index: 2; 
+}
+
+
+
+.navUl {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color:#41767B;
+  font-size: 1.65rem; /* Increase font size by 50% (original: 1.1rem) */
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.3s;
+}
+
+/* Style the active link */
+nav a.active {
+  background-color: #333;
+  color: #efdddd;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: rgba(188, 170, 170, 0.1);
+  border-radius: 5px;
+}
+
+/* 
+"HOMEE" */
+/* 
+.mainBannerDiv {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+.mainBannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainBannerh2{
+  display: flex;
+
+}
+
+.mainBannerButton {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transform: translate(-50%, -1%);
+  padding: 10px 20px;
+  background-color: #41767B;
+  color: white;
+  border:solid;
+  border-radius: 5px;
+  cursor: pointer;
+  width:200px;
+  height:70px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  text-decoration: none;
+} 
+.mainBannerButton:hover{
+  background-color: rgb(137, 133, 133);
+} */
+
+/* .partnershipHomeDiv{
+  background-color: #333;
+  margin-top: 20px 
+
+} */
+
+
+
+
+
+ .mainBannerDiv {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.mainBannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainBannerh2 {
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  margin: 0; 
+  color: #47dcf3;
+  font-size: 40px;
+ 
+}
+
+.mainBannerButton {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transform: translate(-50%, -1%);
+  padding: 10px 20px;
+  background-color: #41767B;
+  color: white;
+  border:solid;
+  border-radius: px;
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  text-decoration: none;
+}
+/* .mainBannerh2:hover {
+  transform: translateY(-3px); /* Move the text 3 pixels up */
+  /* transition: transform 0.3s ease;  */
+
+
+/* Button Hover Effect */
+.mainBannerButton:hover {
+  background-color: rgb(137, 133, 133);
+  transform: scale(1.05); /* Scale the button slightly */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+/* .mainBannerButton:hover {
+  background-color: rgb(137, 133, 133);
+} */
+
+
+/* "SECOND PART OF HOME" */
+.partnershipHomeDiv {
+  background-color:#080808;
+  margin-top: 15px;
+}
+.sliderLogo{
+  width:130px;
+  height:130px
+}
+ 
+
+
+
+
+
+
+
+/* "Third PART OF HOME" */
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #080808;
+  margin-top: 15px 
+}
+
+.content {
+  display: flex;
+}
+
+.notJustALogoMainDiv {
+  display: flex;
+  align-items: center;
+}
+
+.notJustALogoImg {
+  width: 700px; /* Adjust width as per your requirement */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add some space between image and text */
+}
+
+.notJustALogoContent {
+  flex: 1; /* Let the content take remaining space */
+  color:white
+}
+.notJustALogoLink {
+ 
+  padding: 1px 1px;
+  background-color: #41767B;
+  color: white;
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  text-decoration: none;
+}
+.notJustALogoH1{
+  color: #47dcf3;
+  font-size: 40px;
+
+}
+.packagedesignH1{
+  color:#d111b1;
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+/* {HOME PART 4} */
+
+.categories {
+  margin-top: 20px;
+}
+
+.categories h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories li {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+ 
+}
+
+
+.categories li:hover {
+  background-color: #e0e0e0;
+}
+
+
+.categoriesContainer {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.whiteCategoriesDiv{
+  background-color: #d0cbcb;
+}
+.categoriesH2 {
+  margin-bottom: 40px; 
+  color: #266a74;
+  text-align: center; 
+  font-size: 40px;
+
+}
+
+ .categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  
+}
+
+.categoryHomeLi {
+  text-align: center;
+} 
+
+
+.categoryHomeImg {
+  width: 400px; 
+  height: 250px;
+  /* border:solid; */
+  border-radius: 50px;
+  cursor: pointer;
+  /* transform: rotateY(180deg); */
+}
+
+.categoryName {
+  display: flex;
+  margin-top: 5px; /* Adjust as needed */
+  font-size: 25px; /* Adjust font size as needed */
+  color:rgb(190, 29, 158);
+  justify-content: space-around;
+  cursor: pointer;
+}
+.catLink{
+  text-decoration: none;
+}
+
+.categoryDetailsH2{
+  color: white;
+
+}
+.categoryNameDescriptionStrong {
+  color: white; 
+}
+
+.servicesList li {
+  color: white; 
+}
+
+
+
+
+
+
+/* #{HOME PART 5 } */
+
+.lastDivHome {
+  display: flex;
+  justify-content: center; /* horizontally center the content */
+  align-items: center; /* vertically center the content */
+  margin-top: 80px;
+  background-color: #d0cbcb;
+  height: 100px;
+}
+
+.lastH2Home {
+  text-align: center; /* horizontally center the text */
+}
+
+
+
+
+/* #HOME PART 6 */
+/* .studio14Div{
+  margin-top: 70px;
+  align-items: center; 
+
+} */
+/* .studio14Img{
+  width:700px;
+  height:600px
+}  */
+
+.studio14Container {
+  display: flex;
+  border: 1px solid #fff; /* White border */
+  padding: 40px;
+  max-width: 1100px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+  margin-top: 50px;
+  /* width:1000px; */
+}
+
+.studio14Img {
+  width:500px;
+  height:500px;
+  margin-right: 20px; /* Add some space between image and content */
+}
+
+.studio14Content {
+  flex-grow: 1; /* Allow content to take remaining space */
+}
+
+.studio14H2 {
+  font-size: 24px; 
+  margin-top: 0; 
+  color:#d111b1;
+}
+
+.studio14P {
+  font-size: 16px; /* Adjust paragraph size as needed */
+  margin-bottom: 10px; /* Add some space between paragraphs */
+  color: #fff;
+}
+.studio14ContactUsButton{
+  display: flex;
+  /* padding: 10px 20px; */
+  background-color: #9a549e;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  text-decoration: none;
+  
+
+} 
+.studio14ContactUsButtonDiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  
+
+}
+
+/* #FOOTER */
+
+
+.footerDiv {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  margin-top: 20px;
+  height: 170px;
+}
+
+.footerDiv a {
+  margin: 0 20px; /* Add spacing between the images */
+}
+
+
+.instaLogo , .fbLogo{
+  width:80px;
+  
+}
+
+
+/* (#category details ) */
+
+.category2Name{
+  font-size: 50px;
+  color:#47dcf3
+
+}
+
+.category2Description{
+  font-size: 30px;
+  color:#f0f0f0;
+  margin-top: 20px;
+}
+
+
+.categoriesDetailsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the categories horizontally */
+}
+
+.categoryDetailsHomeLi {
+  margin: 10px; /* Add some margin between each category */
+  text-align: center; /* Center the content within each category */
+}
+
+.categoryDetailsContent {
+  margin-bottom: 10px; /* Add margin between text and images */
+}
+
+.imageRow {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+}
+
+.categoryDetailsHomeImg {
+  width: 400px; 
+  height: 250px;
+  /* border:solid; */
+  border-radius: 50px;
+  cursor: pointer;
+  /* transform: rotateY(180deg); */
+  margin: 0 5px; /* Add margin between images */
+}
+
+
+/* #SERVICE PAGE  */
+
+.serviceImg{
+  margin-right: 20px;
+}
+
+.serviceH2{
+  margin-bottom: 40px; 
+  margin-top: 40px;
+  color: #266a74;
+  text-align: center; 
+  font-size: 35px;
+}
+
+/* 
+.serviceBoxH2{
+  font-size: 24px; 
+  margin-top: 0; 
+  color:#d111b1; 
+} */
+.serviceBoxH2 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #d111b1;
+  animation: moveText 2s infinite alternate; /* Adjust timing and animation as needed */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px); /* Adjust the distance to move */
+  }
+}
+
+.servicebrandIdentityH2{
+  font-size: 24px;
+  margin-top: 0;
+  color:#47dcf3;
+  animation: moveText 2s infinite alternate; /* Adjust timing and animation as needed */
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px); /* Adjust the distance to move */
+  }
+}
+
+/* 
+.serviceBoxH2::after {
+  content: "↓";
+  position: absolute;
+  bottom: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px; 
+} */
+
+.arrowDownH2{
+  color:#47dcf3;
+  position: absolute;
+  margin-top: -10px;
+  /* margin-bottom: 100px; */
+  left: 50%;
+  
+  font-size: 50px; 
+}
+.serviceRequestQuoteButtonDiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 380px;
+}
+.requestAQuoteButton{
+  display: flex;
+  /* padding: 10px 20px; */
+  background-color: #9a549e;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.requestAQuoteLeftButton{
+  display: flex;
+  /* padding: 10px 20px; */
+  background-color:#3fbfd2;
+  color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+  text-decoration: none;
+  margin-right: 100px;
+  margin-top: 50px;
+}
+
+.servicePContent{
+  flex-grow: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+  
+}
+
+.serviceP{
+  font-size: 16px; 
+  margin-bottom: 10px; 
+  color: #fff;
+}
+
+
+
+
+/* 
+#projectsSection{
+  background-color: #e0e0e0;
+} */
+#categoriesGrid{
+  background-color: #2b2828;
+
+}
+
+.categoryyName{
+  display: flex;
+  margin-top: 5px; /* Adjust as needed */
+  font-size: 28px; /* Adjust font size as needed */
+  color:#47dcf3;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.categoryyHomeImg{
+  width: 400px; 
+  height: 250px;
+  /* border:solid; */
+  /* border-radius: 50px; */
+  cursor: pointer;
+  /* transform: rotateY(180deg); */
+}
+
+
+
+/* ///CONTACT US  */
+/* .contactusH1{
+  margin-bottom: 40px; 
+  color: #266a74;
+  text-align: center; 
+  font-size: 40px;
+} */
+.contactusFirstDiv {
+  position: relative;
+}
+.contactusDiv {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center
+
+}
+
+.contactusH1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  margin-bottom: 40px; 
+  color: #266a74;
+  text-align: center; 
+  font-size: 80px;
+}
+
+.contactusBeforeForm {
+  margin-right: 20px; 
+}
+
+.contactusFormDiv {
+  margin-left: 150px; 
+}
+.contactusImg {
+  height:500px;
+  width:1900px;
+}
+
+.contactusInputName , .contactusInputEmail{
+  border: none;
+  border-bottom: 2px solid  rgb(220, 20, 143);
+  width:200px;
+  height:50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+.contactusInputMessage{
+  border: none;
+  border-bottom: 2px solid  rgb(220, 20, 143);
+  width:400px;
+  height:150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.contactusInput{
+  border: none;
+  border-bottom: 2px solid rgb(220, 20, 143);
+  width:280px;
+  height:50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+.contactusButton{
+  background-color:  #266a74 ;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 8px;
+  cursor: pointer;
+  height:40px
+}
+
+.contactusBeforeFormH2,.contactusBeforeFormH1,.contactusBeforeFormP {
+  color: white;
+
+}
+
+
+
+.contactusInput, .contactusInputName, .contactusInputEmail, .contactusInputMessage {
+  border-radius: 12px;
+}
+
+.contactusButton {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.contactusButton:hover {
+  background-color: #195e68; /* Darker shade of primary color */
+}
+
+.contactusFormDiv {
+  box-shadow: 0 0 10px rgba(214, 184, 184, 0.1);
+}
+.formH2{
+  color:  #317d88;
+  margin-left: 90px;
+}
